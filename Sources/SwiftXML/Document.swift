@@ -1,6 +1,5 @@
 import Foundation
 #if canImport(FoundationXML)
-import CFXMLInterface
 import FoundationXML
 #endif
 
