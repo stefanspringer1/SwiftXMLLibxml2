@@ -35,21 +35,21 @@ copy %SDKROOT%\usr\share\winsdk.modulemap "%UniversalCRTSdkDir%\Include\%UCRTVer
    
    In `Package.swift` add the following inside the dependencies at the top-level of the package:
 
-    ```swift
-        .package(url: "[https://github.com/stefanspringer1/SwiftXML.git](https://github.com/stefanspringer1/SwiftXML.git)", from: "0.0.1"),
-    ```
+```swift
+    .package(url: "[https://github.com/stefanspringer1/SwiftXML.git](https://github.com/stefanspringer1/SwiftXML.git)", from: "0.0.1"),
+```
 
     For the target, add the following dependency:
 
-    ```swift
-        .product(name: "SwiftXML", package: "SwiftXML")
-    ```
+```swift
+    .product(name: "SwiftXML", package: "SwiftXML")
+```
 
 11.  Open (in CLion) `main.swift` and add the following code (use your paths):
 
-    ```swift
-    _ = XMLDocument(document: "my path to the XML document", catalog: "my path to the catalog")
-    ```
+```swift
+_ = XMLDocument(document: "my path to the XML document", catalog: "my path to the catalog")
+```
 
     The second argument is optional. The argument names might change in later versions.
 
