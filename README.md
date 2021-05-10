@@ -7,8 +7,10 @@ Using XML in Swift (experimental, in development).
 0. First, you should activate the Developer Mode on Windows. In the Windows settings, search `Developer` (on German systems: `Entwickler`) to find the according setting. (The reason for this is that the Swift Package Manager uses symbolic links so you need the `SeCreateSymbolicLinkPrivilege` privilege. Note that it is possible that the domain policy is overriding the local policy you set.)
 
 1. Install Visual Studio (get it from [https://visualstudio.microsoft.com](https://visualstudio.microsoft.com)).
+   
+2. Install the Swift toolchain (get it from [https://swift.org/download](https://swift.org/download)). Swift will be installed to `C:\Library`. In a newly opened comamnd line winmdows, the command `swift -version` should then print teh Swift version.
 
-2. You will have to make the Windows SDK accessable to Swift. Open the `x64 Native Tools for VS2019 Command Prompt` with Administrator rights (there is an accordings entry in the context menu of its entry in the start menu) and inside it, execute the following commands. (Please also see the documentation [https://swift.org/getting-started/](https://swift.org/getting-started/) in case something has changed.)
+3. You will have to make the Windows SDK accessable to Swift. Open the `x64 Native Tools for VS2019 Command Prompt` with Administrator rights (there is an accordings entry in the context menu of its entry in the start menu) and inside it, execute the following commands. (Please also see the documentation [https://swift.org/getting-started/](https://swift.org/getting-started/) in case something has changed.)
 
 ```batch
 copy %SDKROOT%\usr\share\ucrt.modulemap "%UniversalCRTSdkDir%\Include\%UCRTVersion%\ucrt\module.modulemap"
@@ -17,11 +19,9 @@ copy %SDKROOT%\usr\share\visualc.apinotes "%VCToolsInstallDir%\include\visualc.a
 copy %SDKROOT%\usr\share\winsdk.modulemap "%UniversalCRTSdkDir%\Include\%UCRTVersion%\um\module.modulemap"
 ```
 
-3. Install CLion (get it from [https://www.jetbrains.com/clion](https://www.jetbrains.com/clion)).
+4. Install CLion (get it from [https://www.jetbrains.com/clion](https://www.jetbrains.com/clion)).
 
-4. Install the Swift toolchain (get it from [https://swift.org/download](https://swift.org/download)). Swift will be installed to `C:\Library`.
-
-5. Also as a first test, create a new empty directory, and inside it, create a new Swift package by executing the command line `swift package init --type executable` in a newly opened command line window. Some files will then be created inside this directory.
+5. Create a new empty directory, and inside it, create a new Swift package by executing the command line `swift package init --type executable` in a newly opened command line window. Some files will then be created inside this directory.
 
 6. Start Clion.
 
