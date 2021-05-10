@@ -42,7 +42,7 @@ In `Package.swift` add the following inside the dependencies at the top-level of
 For the target, add the following dependency:
 
 ```swift
-.product(name: "SwiftXML", package: "SwiftXML")
+.product(name: "SwiftXML", package: "SwiftXML"),
 ```
 
 11.  Open (in CLion) `main.swift` and add the following code (use your paths):
