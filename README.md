@@ -33,13 +33,13 @@ copy %SDKROOT%\usr\share\winsdk.modulemap "%UniversalCRTSdkDir%\Include\%UCRTVer
 
 10. Include the `SwiftXML` package:
    
-   In `Package.swift` add the following inside the dependencies at the top-level of the package:
+In `Package.swift` add the following inside the dependencies at the top-level of the package:
 
 ```swift
 .package(url: "[https://github.com/stefanspringer1/SwiftXML.git](https://github.com/stefanspringer1/SwiftXML.git)", from: "0.0.1"),
 ```
 
-    For the target, add the following dependency:
+For the target, add the following dependency:
 
 ```swift
 .product(name: "SwiftXML", package: "SwiftXML")
@@ -51,8 +51,8 @@ copy %SDKROOT%\usr\share\winsdk.modulemap "%UniversalCRTSdkDir%\Include\%UCRTVer
 _ = XMLDocument(document: "my path to the XML document", catalog: "my path to the catalog")
 ```
 
-    The second argument is optional. The argument names might change in later versions.
+The second argument is optional. The argument names might change in later versions.
 
-    Note that, if you want to use a catalog file, an XML catalog is needed here. Also note that paths containing non-ASCII characters might pose a problem at the current state.
+Note that, if you want to use a catalog file, an XML catalog is needed here. Also note that paths containing non-ASCII characters might pose a problem at the current state.
 
 12.  Click the run symbol in CLion. (You can also execute `swift build -c release` for building or `swift run -c release` for also running inside your package. The Swift plugin for CLion is quite new, so this might even be necessary.) The document should then get validated, validation errors printed, and entity definitions and their usage will be displayed.
