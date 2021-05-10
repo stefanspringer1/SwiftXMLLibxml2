@@ -4,7 +4,7 @@ Using XML in Swift (experimental, in development).
 
 ## Usage on Windows (for Development)
 
-0. First, you should activate the Developer Mode on Windows. In the Windows settings, search `Developer` (on German systems: `Entwickler`) to find the according setting. (The backgound is that the Swift Package Manager uses symbolic links so you need the `SeCreateSymbolicLinkPrivilege` privilege. Note that it is possible that the domain policy is overriding the local policy you set.)
+0. First, you should activate the Developer Mode on Windows. In the Windows settings, search `Developer` (on German systems: `Entwickler`) to find the according setting. (The reason for this is that the Swift Package Manager uses symbolic links so you need the `SeCreateSymbolicLinkPrivilege` privilege. Note that it is possible that the domain policy is overriding the local policy you set.)
 
 1. Install Visual Studio (get it from [https://visualstudio.microsoft.com](https://visualstudio.microsoft.com)).
 
