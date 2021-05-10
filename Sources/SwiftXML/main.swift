@@ -57,4 +57,4 @@ public class XMLDocument {
 }
 
 // example:
-//_ = XMLDocument(document: "/Users/stefan/Projekte/testpublikation/20200530.x2cec2af/d2cec2af.ERROR.xml", catalog: "/Users/stefan/Projekte/dtd/TR/Catalog.xml")
+//_ = XMLDocument(document: "my path to the XML document", catalog: "my path to the catalog")
