@@ -38,7 +38,7 @@ Using XML in Swift (experimental, in development).
     _ = XMLDocument(document: "my path to the XML document", catalog: "my path to the catalog")
     ```
 
-    The second argument is optional.
+    The second argument is optional. The argument names might change in later versions.
 
     Note that, if you want to use a catalog file, an XML catalog is needed here. Also note that paths containing non-ASCII characters might pose a problem at the current state.
 
