@@ -10,6 +10,8 @@ Using XML in Swift (experimental, in development).
 
 3. Install the Swift toolchain (get it from [https://swift.org/download](https://swift.org/download)). Swift will be installed to `C:\Library`.
 
+4. Also as a first test, create a new empty directory, and inside it, create a new Swift package by executing the command line `swift package init --type executable` in a newly opened command line window.
+
 4. Start Clion.
 
 5. Add the Swift plugin via the CLion Preferences dialog.
@@ -32,7 +34,7 @@ Using XML in Swift (experimental, in development).
         .product(name: "SwiftXML", package: "SwiftXML")
     ```
 
-9. Open (in CLion) `main.swift` and add the following code (use your paths):
+9.  Open (in CLion) `main.swift` and add the following code (use your paths):
 
     ```swift
     _ = XMLDocument(document: "my path to the XML document", catalog: "my path to the catalog")
