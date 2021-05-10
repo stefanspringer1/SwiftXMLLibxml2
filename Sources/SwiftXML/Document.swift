@@ -1,7 +1,7 @@
 import Foundation
 
 public class XMLDocument {
-    init(document: String, catalog: String? = nil) {
+    public init(document: String, catalog: String? = nil) {
 
         print("document: [\(document)]")
         if let theCatalog = catalog {
