@@ -36,4 +36,4 @@ Using XML in Swift (experimental, in development).
     _ = XMLDocument(document: "my path to the XML document", catalog: "my path to the catalog")
     ```
 
-9. Click the run symbol in CLion.
+9. Click the run symbol in CLion. The document should then get validated, validation errors printed, and entity definitions and their usage will be displayed.
