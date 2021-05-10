@@ -14,7 +14,7 @@ Using XML in Swift (experimental, in development).
 
 5. Start Clion.
 
-6. Add the Swift plugin via the CLion Preferences dialog.
+6. Add the Swift plugin via the CLion Settings dialog.
 
 7. Configure the Swift toolchain in CLion.
 
