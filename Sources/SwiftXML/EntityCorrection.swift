@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(FoundationXML)
+import FoundationXML
+#endif
 
 class EntityDeclarationsGetter: NSObject, XMLParserDelegate {
     
