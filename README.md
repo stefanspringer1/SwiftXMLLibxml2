@@ -38,6 +38,8 @@ Using XML in Swift (experimental, in development).
     _ = XMLDocument(document: "my path to the XML document", catalog: "my path to the catalog")
     ```
 
-    Note that, if you want to use an catalog file, an XML catalog is needed here. Also note that paths containing non-ASCII characters might pose a problem at the current state.
+    The second argument is optional.
+
+    Note that, if you want to use a catalog file, an XML catalog is needed here. Also note that paths containing non-ASCII characters might pose a problem at the current state.
 
 10.  Click the run symbol in CLion. The document should then get validated, validation errors printed, and entity definitions and their usage will be displayed.
