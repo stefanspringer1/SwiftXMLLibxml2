@@ -8,7 +8,7 @@ Using XML in Swift (experimental, in development).
 
 2. Install CLion (get it from [https://www.jetbrains.com/clion](https://www.jetbrains.com/clion)).
 
-3. Install the Swift toolchain (get it from [https://swift.org/download](https://swift.org/download)).
+3. Install the Swift toolchain (get it from [https://swift.org/download](https://swift.org/download)). Swift will be installed to `C:\Library`.
 
 4. Start Clion.
 
