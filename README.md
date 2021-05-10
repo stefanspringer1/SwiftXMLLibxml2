@@ -10,17 +10,17 @@ Using XML in Swift (experimental, in development).
 
 3. Install the Swift toolchain (get it from [https://swift.org/download](https://swift.org/download)). Swift will be installed to `C:\Library`.
 
-4. Also as a first test, create a new empty directory, and inside it, create a new Swift package by executing the command line `swift package init --type executable` in a newly opened command line window.
+4. Also as a first test, create a new empty directory, and inside it, create a new Swift package by executing the command line `swift package init --type executable` in a newly opened command line window. Some files will then be created inside this directory.
 
-4. Start Clion.
+5. Start Clion.
 
-5. Add the Swift plugin via the CLion Preferences dialog.
+6. Add the Swift plugin via the CLion Preferences dialog.
 
-6. Configure the Swift toolchain in CLion.
+7. Configure the Swift toolchain in CLion.
 
-7. Open the Swift package in CLion (open `Package.swift` in CLion and choose "open as project").
+8. Open the Swift package you created in CLion (open `Package.swift` in CLion and choose "open as project").
 
-8. Include the `SwiftXML` package:
+9. Include the `SwiftXML` package:
    
    In `Package.swift` add the following inside the dependencies at the top-level of the package:
 
@@ -34,7 +34,7 @@ Using XML in Swift (experimental, in development).
         .product(name: "SwiftXML", package: "SwiftXML")
     ```
 
-9.  Open (in CLion) `main.swift` and add the following code (use your paths):
+10.  Open (in CLion) `main.swift` and add the following code (use your paths):
 
     ```swift
     _ = XMLDocument(document: "my path to the XML document", catalog: "my path to the catalog")
@@ -44,4 +44,4 @@ Using XML in Swift (experimental, in development).
 
     Note that, if you want to use a catalog file, an XML catalog is needed here. Also note that paths containing non-ASCII characters might pose a problem at the current state.
 
-10.  Click the run symbol in CLion. The document should then get validated, validation errors printed, and entity definitions and their usage will be displayed.
+11.  Click the run symbol in CLion. The document should then get validated, validation errors printed, and entity definitions and their usage will be displayed.
