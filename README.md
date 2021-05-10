@@ -8,21 +8,30 @@ Using XML in Swift (experimental, in development).
 
 1. Install Visual Studio (get it from [https://visualstudio.microsoft.com](https://visualstudio.microsoft.com)).
 
-2. Install CLion (get it from [https://www.jetbrains.com/clion](https://www.jetbrains.com/clion)).
+2. You will have to make the Windows SDK accessable to Swift. Open the `x64 Native Tools for VS2019 Command Prompt` with Administrator rights (there is an accordings entry in the context menu of its entry in the start menu) and inside it, execute the following commands. (Please also see the documentation [https://swift.org/getting-started/](https://swift.org/getting-started/).)
 
-3. Install the Swift toolchain (get it from [https://swift.org/download](https://swift.org/download)). Swift will be installed to `C:\Library`.
+```batch
+copy %SDKROOT%\usr\share\ucrt.modulemap "%UniversalCRTSdkDir%\Include\%UCRTVersion%\ucrt\module.modulemap"
+copy %SDKROOT%\usr\share\visualc.modulemap "%VCToolsInstallDir%\include\module.modulemap"
+copy %SDKROOT%\usr\share\visualc.apinotes "%VCToolsInstallDir%\include\visualc.apinotes"
+copy %SDKROOT%\usr\share\winsdk.modulemap "%UniversalCRTSdkDir%\Include\%UCRTVersion%\um\module.modulemap"
+```
 
-4. Also as a first test, create a new empty directory, and inside it, create a new Swift package by executing the command line `swift package init --type executable` in a newly opened command line window. Some files will then be created inside this directory.
+3. Install CLion (get it from [https://www.jetbrains.com/clion](https://www.jetbrains.com/clion)).
 
-5. Start Clion.
+4. Install the Swift toolchain (get it from [https://swift.org/download](https://swift.org/download)). Swift will be installed to `C:\Library`.
 
-6. Add the Swift plugin via the CLion Settings dialog.
+5. Also as a first test, create a new empty directory, and inside it, create a new Swift package by executing the command line `swift package init --type executable` in a newly opened command line window. Some files will then be created inside this directory.
 
-7. Configure the Swift toolchain in CLion (the settings for the Swift plugin might be the last entry in the Settings dialog). Choose the toolchain under `C:\Library\Developer\Toolchains` (select the subdirectory in `Toolchains`).
+6. Start Clion.
 
-8. Open the Swift package you created in CLion (open `Package.swift` in CLion and choose "open as project").
+7. Add the Swift plugin via the CLion Settings dialog.
 
-9. Include the `SwiftXML` package:
+8. Configure the Swift toolchain in CLion (the settings for the Swift plugin might be the last entry in the Settings dialog). Choose the toolchain under `C:\Library\Developer\Toolchains` (select the subdirectory in `Toolchains`).
+
+9. Open the Swift package you created in CLion (open `Package.swift` in CLion and choose "open as project").
+
+10. Include the `SwiftXML` package:
    
    In `Package.swift` add the following inside the dependencies at the top-level of the package:
 
@@ -36,7 +45,7 @@ Using XML in Swift (experimental, in development).
         .product(name: "SwiftXML", package: "SwiftXML")
     ```
 
-10.  Open (in CLion) `main.swift` and add the following code (use your paths):
+11.  Open (in CLion) `main.swift` and add the following code (use your paths):
 
     ```swift
     _ = XMLDocument(document: "my path to the XML document", catalog: "my path to the catalog")
@@ -46,4 +55,4 @@ Using XML in Swift (experimental, in development).
 
     Note that, if you want to use a catalog file, an XML catalog is needed here. Also note that paths containing non-ASCII characters might pose a problem at the current state.
 
-11.  Click the run symbol in CLion. The document should then get validated, validation errors printed, and entity definitions and their usage will be displayed.
+12.  Click the run symbol in CLion. (You can also execute `swift build -c release` for building or `swift run -c release` for running inside your package) The document should then get validated, validation errors printed, and entity definitions and their usage will be displayed.
