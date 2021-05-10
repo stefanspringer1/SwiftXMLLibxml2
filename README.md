@@ -20,7 +20,7 @@ Using XML in Swift (experimental, in development).
 
 8. Include the `SwiftXML` package:
    
-   In `Package.swift` add the following inside the dependencies at teh top-level of the package:
+   In `Package.swift` add the following inside the dependencies at the top-level of the package:
 
     ```swift
         .package(url: "[https://github.com/stefanspringer1/SwiftXML.git](https://github.com/stefanspringer1/SwiftXML.git)", from: "0.0.1"),
