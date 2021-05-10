@@ -36,7 +36,7 @@ copy %SDKROOT%\usr\share\winsdk.modulemap "%UniversalCRTSdkDir%\Include\%UCRTVer
 In `Package.swift` add the following inside the dependencies at the top-level of the package:
 
 ```swift
-.package(url: "https://github.com/stefanspringer1/SwiftXML.git", from: "0.0.1"),
+.package(url: "https://github.com/stefanspringer1/SwiftXML.git", from: "0.0.7"),
 ```
 
 For the target, add the following dependency:
