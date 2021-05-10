@@ -25,10 +25,6 @@ let package = Package(
                     // By default, a file will be copied if no rule applies.
                     // Process file in Sources/Example/Resources/*
                 .copy("Tools")
-                /*.process("Tools/Validation/libxml2/macOS.ARM/XMLValidation"),
-                .process("Tools/Validation/libxml2/macOS.Intel/XMLValidation"),
-                .process("Tools/Validation/libxml2/RedHat7.Intel/XMLValidation"),
-                .process("Tools/Validation/libxml2/Windows.Intel/XMLValidation.exe"),*/
             ]
         ),
         .testTarget(
