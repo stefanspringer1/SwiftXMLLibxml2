@@ -12,11 +12,13 @@ Using XML in Swift (experimental, in development).
 
 4. Start Clion.
 
-5. Configure the Swift toolchain in CLion.
+5. Add the Swift plugin via the CLion Preferences dialog.
 
-6. Open the Swift package in CLion (open `Package.swift` in CLion and choose "open as project").
+6. Configure the Swift toolchain in CLion.
 
-7. Include the `SwiftXML` package:
+7. Open the Swift package in CLion (open `Package.swift` in CLion and choose "open as project").
+
+8. Include the `SwiftXML` package:
    
    In `Package.swift` add the following inside the dependencies at teh top-level of the package:
 
@@ -30,10 +32,10 @@ Using XML in Swift (experimental, in development).
         .product(name: "SwiftXML", package: "SwiftXML")
     ```
 
-8. Open (in CLion) `main.swift` and add the following code (use your paths):
+9. Open (in CLion) `main.swift` and add the following code (use your paths):
 
     ```swift
     _ = XMLDocument(document: "my path to the XML document", catalog: "my path to the catalog")
     ```
 
-9. Click the run symbol in CLion. The document should then get validated, validation errors printed, and entity definitions and their usage will be displayed.
+10.  Click the run symbol in CLion. The document should then get validated, validation errors printed, and entity definitions and their usage will be displayed.
