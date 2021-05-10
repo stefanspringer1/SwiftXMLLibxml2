@@ -14,7 +14,7 @@ Using XML in Swift (experimental, in development).
 
 5. Configure the Swift toolchain in CLion.
 
-6. Open the Swift package in CLikon (open `Package.swift` in CLion and choose "open as project").
+6. Open the Swift package in CLion (open `Package.swift` in CLion and choose "open as project").
 
 7. Include the `SwiftXML` package:
    
