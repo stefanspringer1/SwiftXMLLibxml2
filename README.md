@@ -16,7 +16,7 @@ Using XML in Swift (experimental, in development).
 
 6. Add the Swift plugin via the CLion Settings dialog.
 
-7. Configure the Swift toolchain in CLion.
+7. Configure the Swift toolchain in CLion (the settings for the Swift plugin might be the last entry in the Settings dialog). Choose the toolchain under `C:\Library\Developer\Toolchains` (select the subdirectory in `Toolchains`).
 
 8. Open the Swift package you created in CLion (open `Package.swift` in CLion and choose "open as project").
 
