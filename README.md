@@ -55,4 +55,4 @@ copy %SDKROOT%\usr\share\winsdk.modulemap "%UniversalCRTSdkDir%\Include\%UCRTVer
 
     Note that, if you want to use a catalog file, an XML catalog is needed here. Also note that paths containing non-ASCII characters might pose a problem at the current state.
 
-12.  Click the run symbol in CLion. (You can also execute `swift build -c release` for building or `swift run -c release` for running inside your package. The Swift plugin for CLion is quite new, so this might even be necessary.) The document should then get validated, validation errors printed, and entity definitions and their usage will be displayed.
+12.  Click the run symbol in CLion. (You can also execute `swift build -c release` for building or `swift run -c release` for also running inside your package. The Swift plugin for CLion is quite new, so this might even be necessary.) The document should then get validated, validation errors printed, and entity definitions and their usage will be displayed.
