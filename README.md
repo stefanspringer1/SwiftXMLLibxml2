@@ -2,7 +2,7 @@
 
 Using XML in Swift (experimental, in development).
 
-## Usage on Windows
+## Usage on Windows (for Development)
 
 1. Install Visual Studio (get it from [https://visualstudio.microsoft.com](https://visualstudio.microsoft.com)).
 
