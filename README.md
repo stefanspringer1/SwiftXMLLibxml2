@@ -47,7 +47,7 @@ For the target, add the following dependency:
 .product(name: "SwiftXML", package: "SwiftXML"),
 ```
 
-11.  Open (in CLion) `main.swift` and add the following code (use your paths):
+11.  Open `main.swift` in CLion and add the following code (use your paths):
 
 ```swift
 _ = XMLDocument(document: "my path to the XML document", catalog: "my path to the catalog")
