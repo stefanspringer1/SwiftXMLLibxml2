@@ -4,7 +4,7 @@ Using XML in Swift (experimental, in development).
 
 ## Usage on Windows (for Development)
 
-_Note that the `Foundation` library just got split up into the three libraries `Foundation`, `FoundationNetwork`, and `FoundationXML`, and on Windows there is currently the bug [SR-14578](https://bugs.swift.org/browse/SR-14578) (maybe because of that?), so the project currently does _not_ run on Windows. This will hopefully get resolved soon._
+_**May 11, 2021:** Note that because of the Swift bug [SR-14578](https://bugs.swift.org/browse/SR-14578) you have to choose a Swift toolchain for Windows from the Snapshots, which could contain some errors, as it is not as thoroughly tested as the releases. With Swift version 5.5 this will be resolved soon._
 
 0. The Swift Package Manager (SPM) uses symbolic links so you need the SeCreateSymbolicLinkPrivilege privilege to use the SPM on Windows. You could gain this privilege by activating the Developer Mode on Windows (in the Windows settings, search "Developer" to find the according setting). Note that it is possible that the domain policy is overriding the local policy you set.
 
@@ -21,7 +21,7 @@ copy %SDKROOT%\usr\share\visualc.apinotes "%VCToolsInstallDir%\include\visualc.a
 copy %SDKROOT%\usr\share\winsdk.modulemap "%UniversalCRTSdkDir%\Include\%UCRTVersion%\um\module.modulemap"
 ```
 
-4. Install CLion (get it from [https://www.jetbrains.com/clion](https://www.jetbrains.com/clion)).
+4. Different option could be considered for editing Swift source code. We describe the usage of CLion, a commercial IDE. You can get the installer from [https://www.jetbrains.com/clion](https://www.jetbrains.com/clion).
 
 5. Create a new empty directory, and inside it, create a new Swift package by executing the command line `swift package init --type executable` in a newly opened command line window. Some files will then be created inside this directory.
 
