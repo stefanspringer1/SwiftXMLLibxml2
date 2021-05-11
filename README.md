@@ -6,7 +6,7 @@ Using XML in Swift (experimental, in development).
 
 _Note that the `Foundation` library just got split up into the three libraries `Foundation`, `FoundationNetwork`, and `FoundationXML`, and on Windows there is currently the bug [SR-14578](https://bugs.swift.org/browse/SR-14578) (maybe because of that?), so the project currently does _not_ run on Windows. This will hopefully get resolved soon._
 
-0. First, you should activate the Developer Mode on Windows. In the Windows settings, search `Developer` (on German systems: `Entwickler`) to find the according setting. (The reason for this is that the Swift Package Manager uses symbolic links so you need the `SeCreateSymbolicLinkPrivilege` privilege. Note that it is possible that the domain policy is overriding the local policy you set.)
+0. The Swift Package Manager (SPM) uses symbolic links so you need the SeCreateSymbolicLinkPrivilege privilege to use the SPM on Windows. You could gain this privilege by activating the Developer Mode on Windows (in the Windows settings, search "Developer" to find the according setting). Note that it is possible that the domain policy is overriding the local policy you set.
 
 1. Install Visual Studio (get it from [https://visualstudio.microsoft.com](https://visualstudio.microsoft.com)).
    
