@@ -2,6 +2,10 @@
 
 Using XML in Swift (experimental, in development).
 
+It currently uses libxml2 for validation (it uses the implementation from [Libxml2Validation](https://github.com/stefanspringer1/Libxml2Validation) for sevaral platforms), and an XML catalog is currently necessary for validation.
+
+Later a validation using Xerces-C++ could be added (binaries for Xerces-C++ are available in [XercesBuild](https://github.com/stefanspringer1/XercesBuild)), this would be important if one would like to validate against W3C schema.
+
 ## Usage on Windows (for Development)
 
 _**May 11, 2021:** Note that because of the Swift bug [SR-14578](https://bugs.swift.org/browse/SR-14578) you currently have to choose a Swift toolchain for Windows from the Snapshots, which could contain some other errors, as the Snapshots are not as thoroughly tested as the releases. (Some of those problems might result from the fact that the `Foundation` library was recently split into into the three libraries `Foundation`, `FoundationNetwork`, and `FoundationXML`.) With Swift version 5.5 this should be resolved soon._
