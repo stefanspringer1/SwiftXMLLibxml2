@@ -10,7 +10,7 @@ Later a validation using Xerces-C++ could be added (binaries for Xerces-C++ are 
 
 _**May 11, 2021:** Note that because of the Swift bug [SR-14578](https://bugs.swift.org/browse/SR-14578) you currently have to choose a Swift toolchain for Windows from the Snapshots, which could contain some other errors, as the Snapshots are not as thoroughly tested as the releases. (Some of those problems might result from the fact that the `Foundation` library was recently split into into the three libraries `Foundation`, `FoundationNetwork`, and `FoundationXML`.) With Swift version 5.5 this should be resolved soon._
 
-0. The Swift Package Manager (SPM) uses symbolic links so you need the SeCreateSymbolicLinkPrivilege privilege to use the SPM on Windows. You could gain this privilege by activating the Developer Mode on Windows (in the Windows settings, search "Developer" to find the according setting). Note that it is possible that the domain policy is overriding the local policy you set.
+0. The Swift Package Manager (SPM) uses symbolic links so you need the SeCreateSymbolicLinkPrivilege privilege to use the SPM on Windows. You could instead activate the Developer Mode on Windows (in the Windows settings, search "Developer" to find the according setting). Note that it is possible that the domain policy is overriding the local policy you set.
 
 1. Install Visual Studio (get it from [https://visualstudio.microsoft.com](https://visualstudio.microsoft.com)).
    
