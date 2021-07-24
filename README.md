@@ -1,4 +1,4 @@
-# SwiftXMLibxml2
+# SwiftXMLLibxml2
 
 This is a Swift package for using XML in Swift (experimental, in development) using libxml2 for validation (it uses the implementation from [Libxml2Validation](https://github.com/stefanspringer1/Libxml2Validation) for sevaral platforms), and an XML catalog is currently necessary for validation.
 
