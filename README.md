@@ -1,8 +1,6 @@
-# SwiftXML
+# SwiftXMLibxml2
 
-This is a Swift package for using XML in Swift (experimental, in development).
-
-It currently uses libxml2 for validation (it uses the implementation from [Libxml2Validation](https://github.com/stefanspringer1/Libxml2Validation) for sevaral platforms), and an XML catalog is currently necessary for validation.
+This is a Swift package for using XML in Swift (experimental, in development) using libxml2 for validation (it uses the implementation from [Libxml2Validation](https://github.com/stefanspringer1/Libxml2Validation) for sevaral platforms), and an XML catalog is currently necessary for validation.
 
 Later a validation using Xerces-C++ could be added (binaries for Xerces-C++ are available in [XercesBuild](https://github.com/stefanspringer1/XercesBuild)), this would be important if one would like to validate against W3C schema.
 
